@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<title>The Recruiter's Guide to Vibe Code Their First Project</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Roboto', sans-serif; background: #FAF9F7; color: #2D2B28; line-height: 1.7; padding: 40px 20px; }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 32px; margin-bottom: 4px; color: #2D2B28; }
+  h2 { font-size: 24px; margin-top: 48px; margin-bottom: 0; color: #2D2B28; padding-bottom: 8px; }
+  .color-bar { height: 4px; border-radius: 2px; margin: 0 0 16px 0; background: linear-gradient(90deg, #C4704B, #E8A87C); }
+  h3 { font-size: 18px; margin-top: 32px; margin-bottom: 12px; color: #C4704B; }
+  h4 { font-size: 14px; margin-top: 24px; margin-bottom: 8px; }
+  p { margin-bottom: 16px; font-size: 16px; }
+  .subtitle { font-size: 17px; color: #6B6560; margin-bottom: 8px; font-family: 'Roboto', sans-serif; }
+  .byline { font-size: 14px; color: #9C9590; margin-bottom: 32px; font-family: 'Roboto', sans-serif; }
+  hr { border: none; border-top: 1px solid #EDE9E3; margin: 40px 0; }
+  ul, ol { margin-bottom: 16px; padding-left: 24px; }
+  li { margin-bottom: 8px; font-size: 16px; }
+  strong { color: #2D2B28; }
+  em { color: #6B6560; }
+  code { font-family: 'SF Mono', 'Fira Code', monospace; background: #F3F0EC; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+  pre { background: #2D2B28; color: #FAF9F7; padding: 16px 20px; border-radius: 10px; margin-bottom: 16px; overflow-x: auto; font-size: 14px; line-height: 1.5; }
+  pre code { background: none; padding: 0; color: inherit; }
+  blockquote { border-left: 3px solid #C4704B; padding: 12px 20px; margin: 16px 0; background: #FDF3ED; border-radius: 0 8px 8px 0; font-style: italic; color: #6B6560; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; font-family: 'Roboto', sans-serif; }
+  th { background: #F3F0EC; padding: 10px 14px; text-align: left; font-weight: 700; border-bottom: 2px solid #EDE9E3; font-size: 13px; }
+  td { padding: 10px 14px; border-bottom: 1px solid #EDE9E3; }
+  tr:last-child td { border-bottom: none; }
+  a { color: #C4704B; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #EDE9E3; font-size: 13px; color: #9C9590; text-align: center; font-family: 'Roboto', sans-serif; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1><span style="color: #C4704B;">A Recruiter's Guide:</span><br>Vibe Code Your First (Free!) Project</h1>
+<p class="subtitle">A step-by-step guide, that'll take you from zero to your first live build.</p>
+<p class="byline" style="margin-bottom: 2px;"><strong>Created by the First team:</strong></p>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+  <div style="width: 48px; height: 48px; border-radius: 50%; background: #E8A87C; flex-shrink: 0;"></div>
+  <p class="byline" style="margin-bottom: 0;"><strong>Jamie Lyons</strong>, 8 years in recruitment (agency, internal &amp; RecTech). Talent researcher and recent vibe coder.</p>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+  <div style="width: 48px; height: 48px; border-radius: 50%; background: #C4704B; flex-shrink: 0;"></div>
+  <p class="byline" style="margin-bottom: 0;"><strong>Luke Morton</strong>, Founder of First. 20+ years coding, thousands of hours on Claude Code.</p>
+</div>
+<h2>You're Not Behind on Vibe Coding.</h2>
+<div class="color-bar"></div>
+<p>If LinkedIn makes you feel like you're falling behind with AI. Slow down, you're not.</p>
+<p>Everyone's out here acting like they're building apps and automating workflows, but the reality is most people are still just chatting to ChatGPT about dinner recipes. Only around x% of UK adults even pay for an AI subscription. A fraction of those have tried vibe coding. And an even smaller fraction have actually deployed something live.</p>
+<p>This step by step guide is vibe coding stripped back to its bones. At the end, you'll walk away having created your first live project, which is more than 99% of people have done.</p>
+<p>The entire guide can take just 30 minutes to complete!...or more depending on how much of a perfectionist you are, or if you get hooked on vibe coding :D</p>
+<p>If you've used AI to tidy up emails, plan holidays, or pretty much anything else...then you have enough experience to complete this project. In fact, this is the perfect next step on your journey to becoming an AI enabled recruiter.</p>
+<h2>So, What Will We Build?</h2>
+<div class="color-bar"></div>
+<p>Together, we're going to build a digital interactive CV!</p>
+<p>The CV is a great first build, because you already know the document inside out. But more importantly it's a build that carries zero risk - no client data, no sensitive systems, and no pressure to deliver value. Just you experimenting and learning how this stuff works</p>
+<p><strong>Note:</strong> While this could be used as a job-seeking tool, the primary goal of this guide is getting more recruiters to take their first step with vibe coding.</p>
+<p>Plus, every recruiter has opinions on how the CV could be designed better. Not surprising given it's barely changed in a century. But the ability to actually do something about it was always out of reach...</p>
+<p>Until now.</p>
+<p>This is your chance to build the CV you've always wished you'd receive!</p>
+<p>This project has been structured to remove any risks. AI can't access anything on your computer, only what you put into the chat. It's just you, a chat window, and the freedom to experiment with new tech.</p>
+<h2>What You'll Learn</h2>
+<div class="color-bar"></div>
+<p>Along the way you'll pick up how to:</p>
+<ul>
+  <li>Turn a chat prompt into a working prototype</li>
+  <li>Use Claude as a creative partner to brainstorm design ideas</li>
+  <li>Refine and edit everything using natural language, no code</li>
+  <li>Store your build in a safe and accessible place</li>
+  <li>Launch your project onto the internet</li>
+</ul>
+<p>And without writing or reviewing a single line of code, you'll walk away with a sharable digital CV link! Here's <a href="https://github.com/R9JJAYL/The-New-CV">an example we had fun with</a>.</p>
+<div style="text-align: center; margin: 2rem 0; padding: 3rem 2rem; background: #F3F0EC; border-radius: 10px; color: #9C9590; font-size: 14px; font-style: italic;">[Image placeholder]</div>
+<p>However, what your end result actually looks like is up to you. Add tabs, FAQs, pictures, logos, animations, timelines, styles, colours, embedded links, whatever feels right. This guide gives you the tools, but the creative decisions are yours. Let your personality shine through, which is the beauty of vibe coding.</p>
+<p><strong>Note:</strong> If you're hoping to share your build publicly, to share what's possible and inspire others, but would rather not share your own CV data; no problem. Use <a href="#">this example CV</a> instead.</p>
+<h2>Part 1: Building Your Digital CV</h2>
+<div class="color-bar"></div>
+<p>For the build, we will be using one of the hottest AI tools right now, <a href="https://claude.ai">Claude</a>. Open up Claude to create an account (if you haven't already), then start a new chat.</p>
+<p>Inside Claude is where you'll spend most of your time, and it all happens in a single chat window. Exactly how you'd be familiar with in ChatGPT, Gemini or any other LLM. No downloads, no installations, no technical jargon or tab switching. Just you and Claude talking in natural language.</p>
+<div style="text-align: center; margin: 24px 0;">
+  <div style="width: 100%; max-width: 600px; margin: 0 auto; background: #F3F0EC; border-radius: 10px; padding: 80px 20px; color: #9C9590; font-size: 14px; font-style: italic; border: 2px dashed #E8A87C;">[Screenshot: Claude chat window]</div>
+</div>
+<h3>Step 1: Define Your Project</h3>
+<p>Before Claude can help you build anything, you need to share what your goal is. So the first action is to define your project.</p>
+<p>There's a few ways to tackle this. You can even ask Claude to help you figure it out. Try a simple message like:</p>
+<blockquote>"I want to build an interactive digital CV as a website, something that brings my career to life and a fun project to get me comfortable vibe coding my first build with AI. Ask me at least 5 questions before starting"</blockquote>
+<p>By adding "ask at least 5 questions", Claude will clarify some points to get a better idea of your vision. Likely the sections you want, what design style, what tone, and more. Answer them as they pop up, and Claude will put together a project plan tailored to your answers. Then from there, it'll start building.</p>
+<p>Alternatively, once you get a bit more comfortable, you can build a more comprehensive prompt brief upfront rather than relying on Claude to ask the right questions. This approach gives you a lot more precision with the initial build. Here's an example of what that brief could look like:</p>
+<blockquote>
+"You're a senior product designer who specialises in recruitment and personal branding websites. Think clean, modern design. Notion-style simplicity with subtle polish. It should be easy for recruiters to read and extract information from.<br><br>
+I'm a recruiter with 8 years of experience. I want to build an interactive digital CV as a website to experiment with AI and see what's possible. Something that brings my career to life and could eventually be shared with hiring teams. Here's what I want:<br><br>
+- A warm, professional design (think cream/terracotta tones, not corporate blue). Nothing that looks like a LinkedIn PDF export<br>
+- Three tabs: My Career, My Projects, My Personal Life<br>
+- My Career should have: a headline with my name and title, a short summary paragraph, animated stats (e.g. '300+ career hires'), and expandable role cards for each position showing company, dates, my role context, and key achievements<br>
+- My Projects should be clickable tiles that open an overlay with a full breakdown of each project<br>
+- My Personal Life should be light and human: hobbies, values, a bit of personality, and some spaces for photos<br><br>
+Here's my career data:<br>
+[paste your roles, achievements, stats here, or attach your CV]<br><br>
+Here's a site I like the feel of because of X, Y and Z: [paste a link or share images to any website or portfolio you've seen that inspires you]<br><br>
+The page should feel interactive and alive, things that respond when you click or scroll. Make it feel premium but approachable.<br><br>
+Before you build, ask me any questions you need answered."
+</blockquote>
+<p>Don't worry about getting overwhelmed by this longer prompt. It's a lot to digest not overly important at this stage. The most important thing is getting started, and both prompts will do exactly that.</p>
+<p>But for the sake of understanding 'why' this longer brief is an improvement on the first one, let's break that down.</p>
+<h3>Why This Brief Works</h3>
+<ul>
+  <li><strong>We gave a persona.</strong> We told Claude who it's acting as. "You're a senior product designer who specialises in recruitment and personal branding websites" gets a completely different result than no direction at all. It sets the quality bar before Claude writes a single line.</li>
+  <li><strong>We stated our audience and purpose.</strong> Who might eventually see this, and why are we building it? "To experiment with AI and see what's possible" gives Claude context that shapes everything from tone to layout. Mentioning the audience, like hiring teams, helps even more.</li>
+  <li><strong>We were specific about design.</strong> "Warm tones" is better than "make it look nice." We referenced things we've seen: "like a Notion page" or "cream background, terracotta accents."</li>
+  <li><strong>We included our data.</strong> Don't say "add my roles". Paste them in or attach your CV. The more real content and context Claude has, the better the output.</li>
+  <li><strong>We described what we want to see.</strong> "Expandable cards that reveal achievements on click" is better than "interactive role section." If you have a vision, describe it. It stops Claude guessing.</li>
+  <li><strong>We said what we don't want.</strong> "No corporate blue, no stock photo energy, nothing that looks like a LinkedIn PDF export" is just as useful as saying what you do want.</li>
+  <li><strong>We shared examples.</strong> If you've seen a website, portfolio, or design you like, share the link. Claude can work from references.</li>
+  <li><strong>We ended with an invitation.</strong> Adding "Before you build, ask me any questions you need answered" means Claude will flag anything unclear rather than making assumptions. Great if you're not sure your brief covers everything, or to fill any blind spots.</li>
+</ul>
+<p>In a nutshell: The more context you cover, the closer the first prototype will be to your vision and it's likely to need fewer refinements.</p>
+<p>Right. Now back to the task. Once you've written your initial prompt, whether you've kept it short and sweet like the first example, experimented with the longer second example, or anything in between, hit send, and Claude will get to work on your prototype.</p>
+<p><strong>Note:</strong> If for whatever reason it didn't start building, follow up with "Start building it please!"</p>
+<p>Then feel free to go and make a tea whilst your colleague works away for a few mins :D</p>
+<div style="text-align: center; margin: 24px 0;">
+  <div style="width: 100%; max-width: 600px; margin: 0 auto; background: #F3F0EC; border-radius: 10px; padding: 80px 20px; color: #9C9590; font-size: 14px; font-style: italic; border: 2px dashed #E8A87C;">[Screenshot: CV/code split screen]</div>
+</div>
+<h2>Part 2: Review and Refine Your Prototype</h2>
+<div class="color-bar"></div>
+<p>Claude will now have generated your digital CV as a file that appears next to the chat. Click on this file and a preview of your CV will pop up. You can scroll through it, click around, and see exactly what it will look like. It's not a mockup. It's working code you can interact with!</p>
+<p><strong>Note:</strong> if you can't see the file, no stress, just say "Can you put the HTML file for this build in the chat"</p>
+<div style="text-align: center; margin: 24px 0;">
+  <div style="width: 100%; max-width: 600px; margin: 0 auto; background: #F3F0EC; border-radius: 10px; padding: 80px 20px; color: #9C9590; font-size: 14px; font-style: italic; border: 2px dashed #E8A87C;">[Screenshot: HTML file preview in Claude]</div>
+</div>
+<p>Congratulations. You've just built your first prototype! How quick and easy was that?</p>
+<p>Now's the fun part... don't expect it to be perfect first time (it never is), but here's where the real collaboration and design starts.</p>
+<p>Let's start by singling out one thing you'd like to change. Maybe it's a colour that doesn't feel right, a font you're not keen on, or a section that's not designed how you'd like. Just focus on that one thing, which can be anything, and describe what you want to change in the chat to Claude.</p>
+<p>The key here is being specific. <em>"Make it look better"</em> gives Claude very little insight into your vision. Whereas, <em>"I like the cream/terracotta palette, but the role cards look flat overall. Add a subtle border and a hover effect that lifts the card slightly"</em>... That's a clear edit Claude can act on.</p>
+<p>The best way to think of your relationship with Claude is as a consultant you've hired. You're the creative director, Claude is doing the technical work. Communicate exactly how you would with a human colleague. No code, just clarity.</p>
+<p>Literally just write feedback in english.</p>
+<p>Then once you've got the first editing prompt ready, hit send and boom! You've just made your first refinement.</p>
+<p>Some example prompts for inspiration:</p>
+<ul>
+  <li><em>"The career section feels cluttered and hard to scan. I'm not sure what's wrong but it doesn't feel clean. What are my options?"</em></li>
+  <li><em>"Add a connector line between each role on the work experience cards so it looks like a timeline"</em></li>
+  <li><em>"The stats section feels cramped. Space out the numbers and make them more visual, like a recruiter dashboard. Have a bit of fun I'm stuck on design ideas here"</em></li>
+  <li><em>"Change the tab font to Roboto, make the active tab terracotta with white text, and add a smooth underline animation when switching between them."</em></li>
+  <li><em>"What are my design and animation options for the projects section? Show me a few different directions."</em></li>
+  <li><em>"I'm stuck on how to lay out my career history. Give me 5 options: 3 clean and simple, 1 completely out there, and 1 surprise me."</em></li>
+</ul>
+<p>Once Claude has made changes review them, continuing to suggest any further tweaks, back and forth until you're happy with what's been built.</p>
+<p>Then rinse and repeat this process!</p>
+<p>Keep picking at specific refinements for your digital CV, section by section, poking around and experimenting, and then when you're happy with the build, come back, because we're about to have some chaotic fun :D</p>
+<div style="text-align: center; margin: 2rem 0;">
+  <svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="120" cy="120" r="85" fill="none" stroke="#E8A87C" stroke-width="2.5" opacity="0.35"/>
+    <path d="M 120 35 A 85 85 0 1 1 119 35" fill="none" stroke="#C4704B" stroke-width="2.5" stroke-dasharray="4,3" opacity="0.5"/>
+    <circle cx="120" cy="35" r="28" fill="#C4704B"/>
+    <circle cx="194" cy="163" r="28" fill="#C4704B"/>
+    <circle cx="46" cy="163" r="28" fill="#C4704B"/>
+    <text x="120" y="30" text-anchor="middle" font-family="Roboto, sans-serif" font-size="11" fill="#FAF9F7" opacity="0.7">1</text>
+    <text x="194" y="158" text-anchor="middle" font-family="Roboto, sans-serif" font-size="11" fill="#FAF9F7" opacity="0.7">2</text>
+    <text x="46" y="158" text-anchor="middle" font-family="Roboto, sans-serif" font-size="11" fill="#FAF9F7" opacity="0.7">3</text>
+    <text x="120" y="42" text-anchor="middle" font-family="Roboto, sans-serif" font-size="13" font-weight="700" fill="#FAF9F7">build</text>
+    <text x="194" y="170" text-anchor="middle" font-family="Roboto, sans-serif" font-size="13" font-weight="700" fill="#FAF9F7">review</text>
+    <text x="46" y="170" text-anchor="middle" font-family="Roboto, sans-serif" font-size="13" font-weight="700" fill="#FAF9F7">edit</text>
+  </svg>
+</div>
+<h3>Now Time To GO WILD</h3>
+<p>Cool, so you've been making sensible refinements to create a sleek design...now let's do something completely daft. It might just open your eyes to some of the capabilities Claude has, even with no connectors that enhance the tool.</p>
+<blockquote>"I want to see the full variety of what you can do. Go over the top. Elements flying in from every direction, text that types itself out, stats that count up from zero, parallax scrolling, hover effects on everything, confetti when you reach the bottom. Prioritise showing me features over making the design good. I want to understand what's possible. Imagine I'm applying to be a clown at a kids birthday party and I need to show my personality through this. Use lots of colour but make it look professional still."</blockquote>
+<p>In about 60 seconds, your clean CV will transform into something that looks like a clown's portfolio. Rainbow gradients, bouncing elements, the lot. It'll be ridiculous. And every person who does it will get a different result!</p>
+<p>Pushing boundaries and light hearted experimentation often teaches you what's possible, and can even inspire some ideas that will actually impact how you design your real CV.</p>
+<div style="text-align: center; margin: 24px 0;">
+  <div style="width: 100%; max-width: 600px; margin: 0 auto; background: #F3F0EC; border-radius: 10px; padding: 80px 20px; color: #9C9590; font-size: 14px; font-style: italic; border: 2px dashed #E8A87C;">[Screenshot: Clown CV chaos]</div>
+</div>
+<p>But another important lesson we're showing you here: if you don't like it, just tell Claude to undo it. Try, <em>"Please remove the clown changes and go back to how it was before them."</em> That's it. Nothing is permanent, nothing is broken, and you haven't lost any work. Once that clicks, that you can try anything and reverse it in seconds, you stop being precious and start being creative. That's when vibe coding gets really fun!</p>
+<p>And that swiftly wraps up section 2, refining and editing your build with Claude. Once you're done editing, it's time to save this somewhere people can actually see it. Because at the moment it's only saved locally, meaning it's only visible on your device!</p>
+<h2>Part 3: Storing Your Build Somewhere Safe</h2>
+<div class="color-bar"></div>
+<p>You'll notice Claude has been sending you your code in a file. This is the file that contains everything for your digital CV, and it's what we need to turn it into a live site. To turn this into a live website, we first need to save the code somewhere online. That's what GitHub does. Think of it as an online folder for your project.</p>
+<p>Save the HTML file by downloading it to your desktop. Now we need to get that file uploaded onto GitHub.</p>
+<h3>Step 1: Create a GitHub Account</h3>
+<p>If you don't have one already, go to <a href="https://github.com">github.com</a> and sign up. It's free.</p>
+<h3>Step 2: Create a New Repository</h3>
+<p>A "repository" is just a folder for holding code, same idea as a folder on your desktop, but it lives on GitHub instead. Don't overthink it.</p>
+<ol>
+  <li>Click the <strong>+</strong> button in the top right → <strong>New repository</strong></li>
+  <li>Name it something like <code>my-digital-cv</code></li>
+  <li>Keep it <strong>Public</strong> (needed for free hosting later)</li>
+  <li>Tick <strong>Add a README file</strong></li>
+  <li>Click <strong>Create repository</strong></li>
+</ol>
+<h3>Step 3: Upload Your File</h3>
+<ol>
+  <li>In your new repository, click <strong>Add file</strong> → <strong>Upload files</strong></li>
+  <li>Drag and drop the HTML file you downloaded from Claude, or click to browse for it</li>
+  <li>Make sure the file is named <code>index.html</code> (rename it before uploading if needed)</li>
+  <li>Click <strong>Commit changes</strong></li>
+</ol>
+<p>That's it. Your code is now stored on GitHub and ready for the next step: turning it into a live website.</p>
+<h3>Making Updates Later</h3>
+<p>Whenever you make changes in Claude and want to update your site:</p>
+<ol>
+  <li>Download the updated HTML file from Claude</li>
+  <li>Go to your repository on GitHub</li>
+  <li>Click <strong>Add file</strong> → <strong>Upload files</strong></li>
+  <li>Upload the new file (same name, it'll replace the old one)</li>
+  <li>Click <strong>Commit changes</strong></li>
+</ol>
+<p>Once you've connected GitHub to Vercel (we'll do that next), your site will update automatically within about 60 seconds.</p>
+<p>And you'll be glad to hear this process is automatable, using tools like Claude Code you can even completely remove the need to copy/paste GitHub uploads.</p>
+<h2>Part 4: Time to Go Live!</h2>
+<div class="color-bar"></div>
+<p>Right now, your code is sitting in a folder in GitHub. It's stored, but nobody can view your project as a website. Vercel is one of the tools that can change that. It reads the code from your GitHub folder and turns it into a live website with its own link. Think of GitHub as the filing cabinet and Vercel as the shopfront.</p>
+<h3>Step 1: Create a Free Vercel Account</h3>
+<ol>
+  <li>Go to <a href="https://vercel.com">vercel.com</a></li>
+  <li>Click <strong>Sign Up</strong></li>
+  <li>Choose <strong>Continue with GitHub</strong> (this connects your accounts)</li>
+</ol>
+<p><strong>Note:</strong> If "Continue with GitHub" doesn't appear or doesn't work, just sign up with your email instead. Once you're logged in, go to <strong>Settings → Git Integration</strong> and connect your GitHub account from there.</p>
+<h3>Step 2: Import Your Project</h3>
+<ol>
+  <li>Once logged in, click <strong>Add New → Project</strong></li>
+  <li>You'll see your GitHub repositories listed. Find <code>my-digital-cv</code> and click <strong>Import</strong></li>
+  <li>Leave all the default settings as they are</li>
+  <li>Click <strong>Deploy</strong></li>
+</ol>
+<p>Wait about 60 seconds. That's it. Your CV is live.</p>
+<p>Vercel will give you a URL like <code>my-digital-cv.vercel.app</code>. That's your live site. Share it anywhere.</p>
+<p>Every time you update your code on GitHub, Vercel automatically rebuilds your site in about 60 seconds. Make changes in Claude, paste them into GitHub, and your live site updates itself.</p>
+<h2>Quick Reference: The Full Workflow</h2>
+<div class="color-bar"></div>
+<p>Here's the entire process at a glance:</p>
+<pre><code>1. BUILD       → Design and iterate your project in Claude
+2. UPLOAD      → Store your HTML file in GitHub
+3. DEPLOY      → Connect GitHub to Vercel → your site is live</code></pre>
+<h2>What's Next?</h2>
+<div class="color-bar"></div>
+<p>Congratulations. You've gone from a chat prompt to a live website. That's not a small thing. It's your first step into the future of how humans will work, and you're now in the tiny percentile of people who've actually built and shipped something with AI.</p>
+<p>Once your CV is live, here are a few things worth trying:</p>
+<ul>
+  <li><strong>Make it mobile-friendly.</strong> People will open your link on their phone. Try: <em>"Can you make sure this works well on mobile?"</em></li>
+  <li><strong>Try Claude Code.</strong> In this guide we kept things simple: build in Claude chat, copy-paste to GitHub, deploy on Vercel. But if you want a slicker workflow, <a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a> connects directly to your project files, editing, committing, and pushing to GitHub from one place. Think of it as upgrading from manual to automatic.</li>
+  <li><strong>Think bigger.</strong> Start thinking about how this could impact small parts of your hiring experience. Interactive offer letters, candidate interview packs, role landing pages, onboarding guides. None of these need a developer, just a recruiter with an idea and a chat window.</li>
+  <li><strong>Upload assets.</strong> Giving Claude access to your logos, brand colours, fonts, tone of voice guidelines, and images makes a huge difference. The output goes from generic prototype to something that actually looks and feels like it came from your company.</li>
+  <li><strong>Explore other tools.</strong> Claude is a great starting point, but so are tools like <a href="https://v0.dev">v0</a>, <a href="https://lovable.dev">Lovable</a>, <a href="https://bolt.new">Bolt</a>, and many more. <a href="https://docs.anthropic.com/en/docs/claude-code">Claude Code</a> is our tool of choice. For a mixture of its flexibility and power.</li>
+</ul>
+<p>By now, hopefully you've got a working sense of how vibe coding works. And whilst we've only scratched the surface of what's possible in this guide, it's more than most people have done with AI!</p>
+<p>The next step? We'll be releasing a guide to that next week, focusing on how you can use Claude Code to Y</p>
+<p>Share this with a colleague so they can take their first step too.</p>
+<p>Good luck building.</p>
+<div class="footer">
+  Built with <a href="https://claude.ai">Claude</a> | Hosted on <a href="https://vercel.com">Vercel</a> | Source on <a href="https://github.com/R9JJAYL/The-New-CV">GitHub</a>
+</div>
+</div>
+</body>
+</html>
